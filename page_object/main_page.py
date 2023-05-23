@@ -8,6 +8,7 @@ class MainPage(BasePage):
     def accept_cookie(self):
         cookie = self.find_element(MainPageLocators.accept_cookies)
         cookie.click()
+
     @allure.step("Клик - 'Вопросы о важном'")
     def check_answers_in_questions_about_important(self, question_pos):
         self.wait_element(MainPageLocators.title_questions_about_important[1])
@@ -35,5 +36,5 @@ class MainPage(BasePage):
             self.wait_element(MainPageLocators.element_from_yandex[1])
 
     @allure.step("Клик кнопку 'Заказать'")
-    def click_order(self, xpath_element):
-        self.find_element(xpath_element).click()
+    def click_order(self):
+        self.find_element(MainPageLocators.button_order_up).click()

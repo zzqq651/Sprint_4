@@ -28,6 +28,11 @@ user_2 = User(MainPageLocators.button_order_down,
                   "11.04.2023", 4, 0, "Тест")
 
 
+class Urls:
+    dzen_url = ('https://dzen.ru/?yredirect=true')
+    samokat_url = ('https://qa-scooter.praktikum-services.ru/')
+
+
 class DataExample:
     dictionary_question_and_answers = {"Сколько это стоит? И как оплатить?": "Сутки — 400 рублей. Оплата курьеру — наличными или картой.",
                       "Хочу сразу несколько самокатов! Так можно?": "Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.",

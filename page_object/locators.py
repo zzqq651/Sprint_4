@@ -13,7 +13,7 @@ class MainPageLocators:
     button_scooter = [By.XPATH, ".//*[@alt='Scooter']"]  # Логотип Скутер
     button_yandex = [By.XPATH, ".//*[@alt='Yandex']"]  # Логотип Яндекс
     element_from_yandex = [By.XPATH, ".//iframe[@class='dzen-search-arrow-common__frame' and @aria-label='Поиск Яндекса']"]  # Поисковая строка на странице Яндекс Дзен
-
+    text_SMI = [By.XPATH, ".//div[@class='card-news-header__title-2F' and @aria-label='Новости на тему']"] # Сейчас в СМИ странице Яндекс Дзен
 
 class OrderPageLocators:
     field_name = [By.XPATH, ".//*[@placeholder='* Имя']"]  # Поле имени
